@@ -4134,6 +4134,22 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"i18next-async-backend@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "i18next-async-backend@workspace:."
+  dependencies:
+    "@types/jest": ^26.0.22
+    "@typescript-eslint/eslint-plugin": ^4.19.0
+    "@typescript-eslint/parser": ^4.19.0
+    eslint: ^7.22.0
+    jest: ^26.6.3
+    prettier: ^2.2.1
+    semantic-release: ^17.4.2
+    ts-jest: ^26.5.4
+    typescript: ^4.2.3
+  languageName: unknown
+  linkType: soft
+
 "iconv-lite@npm:0.4.24, iconv-lite@npm:~0.4.13":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -6546,22 +6562,6 @@ fsevents@^2.1.2:
   checksum: 419b015365a39accc71515f3a956f93f1e54c0c315ccd12d32c45a49ac50e7c8e3702bd8ea746050c990be7e5af24284bbd8f0b0195fced4cf8f377c59a4a1d1
   languageName: node
   linkType: hard
-
-"npm-package-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "npm-package-template@workspace:."
-  dependencies:
-    "@types/jest": ^26.0.22
-    "@typescript-eslint/eslint-plugin": ^4.19.0
-    "@typescript-eslint/parser": ^4.19.0
-    eslint: ^7.22.0
-    jest: ^26.6.3
-    prettier: ^2.2.1
-    semantic-release: ^17.4.2
-    ts-jest: ^26.5.4
-    typescript: ^4.2.3
-  languageName: unknown
-  linkType: soft
 
 "npm-packlist@npm:^1.1.12, npm-packlist@npm:^1.4.8":
   version: 1.4.8

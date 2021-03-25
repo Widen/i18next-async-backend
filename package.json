@@ -1,13 +1,13 @@
 {
-  "name": "npm-package-template",
+  "name": "i18next-async-backend",
   "version": "0.0.0-semantically-released",
-  "description": "{{description}}",
+  "description": "i18next backend which loads resources via promises.  Useful when loading resources via dynamic imports.",
   "author": "Widen",
   "license": "ISC",
-  "repository": "github:Widen/npm-package-template",
-  "homepage": "https://github.com/Widen/npm-package-template#readme",
+  "repository": "github:Widen/i18next-async-backend",
+  "homepage": "https://github.com/Widen/i18next-async-backend#readme",
   "bugs": {
-    "url": "https://github.com/Widen/npm-package-template/issues"
+    "url": "https://github.com/Widen/i18next-async-backend/issues"
   },
   "keywords": [],
   "exports": "./lib/index.js",
