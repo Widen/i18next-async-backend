@@ -25,13 +25,39 @@ yarn add i18next-async-backend
 import i18next from 'i18next'
 import AsyncBackend from 'i18next-async-backend'
 
+const resources = {
+  es: () => import('./locales/es/translation.json'),
+}
+
 i18next.use(AsyncBackend).init({
-  backend: {
-    resources: {
-      en: {},
-    },
-  },
+  backend: { resources },
 })
+```
+
+## Recipes
+
+### Single namespace
+
+```js
+const resources = {
+  en: () => import('./locales/en/translation.json'),
+  es: () => import('./locales/es/translation.json'),
+}
+```
+
+### Multiple namespaces
+
+```js
+const resources = {
+  en: {
+    common: () => import('./locales/en/common.json'),
+    glossary: () => import('./locales/en/glossary.json'),
+  },
+  es: {
+    common: () => import('./locales/es/common.json'),
+    glossary: () => import('./locales/es/glossary.json'),
+  },
+}
 ```
 
 ## Releasing
