@@ -356,6 +356,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.12.0":
+  version: 7.13.10
+  resolution: "@babel/runtime@npm:7.13.10"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 22014226b96a8c8e8d4e8bcdb011f317d1b32881aef424a669dc6ceaee14993d3609172967853cbf9c25c724c25145d45885b6c9df56ba241c12820776607f1f
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.12.13, @babel/template@npm:^7.3.3":
   version: 7.12.13
   resolution: "@babel/template@npm:7.12.13"
@@ -4142,13 +4151,25 @@ fsevents@^2.1.2:
     "@typescript-eslint/eslint-plugin": ^4.19.0
     "@typescript-eslint/parser": ^4.19.0
     eslint: ^7.22.0
+    i18next: ^20.1.0
     jest: ^26.6.3
     prettier: ^2.2.1
     semantic-release: ^17.4.2
     ts-jest: ^26.5.4
     typescript: ^4.2.3
+  peerDependencies:
+    i18next: ">=20"
   languageName: unknown
   linkType: soft
+
+"i18next@npm:^20.1.0":
+  version: 20.1.0
+  resolution: "i18next@npm:20.1.0"
+  dependencies:
+    "@babel/runtime": ^7.12.0
+  checksum: fb95e19026c2d3d9376087ddfb33c65ba98c80d3e1fb62b93edf7f6b178a492cd5a54bf139edd515a774ee65a75b0051774fdfcf7630f577c26f7014cad2bb12
+  languageName: node
+  linkType: hard
 
 "iconv-lite@npm:0.4.24, iconv-lite@npm:~0.4.13":
   version: 0.4.24
@@ -7664,6 +7685,13 @@ fsevents@^2.1.2:
   dependencies:
     esprima: ~4.0.0
   checksum: 2e8e1eebac6266b9497c81863c8f8efb5aee9960aa0536e7fa9eb917e04674f2da0c2e3167ac9e47bf9a6814c47e9bd4f4575fc39bf53b853cf7620776e9db0b
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.13.4":
+  version: 0.13.8
+  resolution: "regenerator-runtime@npm:0.13.8"
+  checksum: 20178f5753f181d59691e5c3b4c59a2769987f75c7ccf325777673b5478acca61a553b10e895585086c222f72f5ee428090acf50320264de4b79f630f7388653
   languageName: node
   linkType: hard
 

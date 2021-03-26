@@ -3,7 +3,7 @@
 [![Build](https://github.com/Widen/i18next-async-backend/actions/workflows/build.yml/badge.svg)](https://github.com/Widen/i18next-async-backend/actions/workflows/build.yml)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-i18next backend which loads resources via promises.  Useful when loading resources via dynamic imports.
+i18next backend which loads resources via promises. Useful when loading resources via dynamic imports.
 
 ## Installation
 
@@ -21,7 +21,18 @@ yarn add i18next-async-backend
 
 ## Usage
 
-TODO
+```js
+import i18next from 'i18next'
+import AsyncBackend from 'i18next-async-backend'
+
+i18next.use(AsyncBackend).init({
+  backend: {
+    resources: {
+      en: {},
+    },
+  },
+})
+```
 
 ## Releasing
 
