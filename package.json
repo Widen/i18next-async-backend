@@ -1,9 +1,10 @@
 {
   "name": "i18next-async-backend",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.1",
   "description": "i18next backend which loads resources via promises. Useful when loading resources via dynamic imports.",
   "author": "Widen",
   "license": "ISC",
+  "packageManager": "yarn@3.1.0",
   "repository": "github:Widen/i18next-async-backend",
   "homepage": "https://github.com/Widen/i18next-async-backend#readme",
   "bugs": {
@@ -24,7 +25,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "release": "semantic-release"
+    "release": "./scripts/release.sh"
   },
   "release": {
     "branches": [
@@ -35,15 +36,15 @@
     "i18next": ">=20"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.22",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
-    "eslint": "^7.22.0",
-    "i18next": "^20.1.0",
-    "jest": "^26.6.3",
-    "prettier": "^2.2.1",
-    "semantic-release": "^17.4.2",
-    "ts-jest": "^26.5.4",
-    "typescript": "^4.2.3"
+    "@changesets/cli": "^2.18.0",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^8.2.0",
+    "i18next": "^21.4.1",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
   }
 }
