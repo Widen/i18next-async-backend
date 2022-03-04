@@ -1,6 +1,6 @@
 {
   "name": "i18next-async-backend",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "i18next backend which loads resources via promises. Useful when loading resources via dynamic imports.",
   "author": "Widen",
   "license": "ISC",
