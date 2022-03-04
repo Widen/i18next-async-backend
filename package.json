@@ -24,13 +24,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "test": "jest",
-    "release": "./scripts/release.sh"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ]
+    "test": "jest"
   },
   "peerDependencies": {
     "i18next": ">=20"
