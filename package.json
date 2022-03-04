@@ -25,7 +25,8 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "publish": "yarn tsc && yarn changeset publish"
   },
   "peerDependencies": {
     "i18next": ">=20"

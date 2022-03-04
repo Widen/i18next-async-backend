@@ -31,9 +31,9 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
       - name: Create release pull request or publish to npm
-        uses: changesets/action@master
+        uses: changesets/action@v1
         with:
-          publish: yarn tsc && yarn changeset publish
+          publish: yarn publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
