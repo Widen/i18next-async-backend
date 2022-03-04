@@ -4,7 +4,7 @@
   "description": "i18next backend which loads resources via promises. Useful when loading resources via dynamic imports.",
   "author": "Widen",
   "license": "ISC",
-  "packageManager": "yarn@3.1.0",
+  "packageManager": "yarn@3.2.0",
   "repository": "github:Widen/i18next-async-backend",
   "homepage": "https://github.com/Widen/i18next-async-backend#readme",
   "bugs": {
