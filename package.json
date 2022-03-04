@@ -16,6 +16,7 @@
     "i18next-plugin",
     "dynamic-import"
   ],
+  "type": "module",
   "exports": "./lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
