@@ -4,8 +4,8 @@
 [![npm](https://img.shields.io/npm/v/i18next-async-backend)](https://www.npmjs.com/package/i18next-async-backend)
 [![changesets](https://img.shields.io/badge/maintained%20with-changesets-blue)](https://github.com/atlassian/changesets)
 
-i18next backend which loads resources via promises. Useful when loading
-resources via dynamic imports.
+[i18next](https://www.i18next.com) backend which loads resources via promises.
+Useful when loading resources via dynamic imports.
 
 ## Installation
 
