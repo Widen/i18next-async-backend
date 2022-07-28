@@ -1,5 +1,11 @@
 # i18next-async-backend
 
+## 2.0.1
+
+### Patch Changes
+
+- fb5e8d1: Support ESModule default exports.
+
 ## 2.0.0
 
 ### Major Changes
