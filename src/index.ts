@@ -1,6 +1,10 @@
 import { BackendModule, ReadCallback, Services } from 'i18next'
 
-type ResourceFetcher = () => Promise<Record<string, string>>
+type ResourceFetcher = () => Promise<{
+  __esModule?: true
+  default?: Record<string, unknown>
+  [key: string]: unknown
+}>
 
 export interface AsyncBackendOptions {
   resources?: {
@@ -31,7 +35,7 @@ export default class AsyncBackend
 
     if (resourceFetcher) {
       resourceFetcher()
-        .then((resource) => callback(null, resource))
+        .then((res) => callback(null, res.__esModule ? res.default : res))
         .catch((err) => callback(err, false))
     } else {
       callback(new Error('resource not found'), false)

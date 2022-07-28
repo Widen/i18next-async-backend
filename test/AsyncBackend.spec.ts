@@ -58,3 +58,11 @@ it('should load multiple languages', async () => {
   expect(t('ns1:fruit')).toBe('Manzanas')
   expect(t('ns2:fruit')).toBe('Naranjas')
 })
+
+it('should parse ESM default exports', async () => {
+  const { t } = await init(['translation'], {
+    en: () => Promise.resolve({ __esModule: true, default: { foo: 'bar' } }),
+  })
+
+  expect(t('foo')).toBe('bar')
+})
